@@ -63,6 +63,21 @@ The model is trained with the following specifications:
 - Learning rate scheduling with warmup and decay
 - Weight tying between input and output embeddings
 
+## Training Process
+
+During training, the model processes batches of data, computes the loss, and updates the model weights. The training script generates a log file that captures key metrics such as loss values, learning rates, and tokens processed per second. This log file is useful for monitoring the training progress and diagnosing any issues that may arise.
+
+## Training Log File
+
+The training log file is generated during the training process and contains detailed information about each training step. It includes metrics such as:
+- Step number
+- Loss value
+- Learning rate
+- Total step time
+- Tokens processed per second
+
+You can find the [training log file](./training.logs) in the project directory after running the training script.
+
 ## Potential Improvements
 
 1. **Model Enhancements**
